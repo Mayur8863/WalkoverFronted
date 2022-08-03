@@ -121,7 +121,7 @@ const Register = () => {
                 />
               </div>
               <div className="form-group">
-                <button className="btn btn-primary btn-block">Sign Up</button>
+                <button className="btn btn-primary btn-block" style={{width: '100px', marginTop: '20px'}}>Sign Up</button>
               </div>
             </div>
           )}

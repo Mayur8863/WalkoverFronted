@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from "react";
 import UserService from "../services/user.service";
+import fb from '../img/fb.png';
+import background from '../img/background.png';
+import bubble from '../img/bubble.png';
+import ig from '../img/ig.png';
+import info from '../img/info.png';
+import logo from '../img/logo.png';
+import menu from '../img/menu.png';
+import share from '../img/share.png';
+import tw from '../img/tw.png';
+import "../home.css";
+
 const Home = () => {
   const [content, setContent] = useState("");
   useEffect(() => {
@@ -17,11 +28,35 @@ const Home = () => {
     );
   }, []);
   return (
-    <div className="container">
-      <header className="jumbotron">
-        <h3>{content}</h3>
-      </header>
+    // <div className="container">
+    //   <header className="jumbotron">
+    //     <h3>{content}</h3>
+    //   </header>
+    // </div>
+    <div class="hero"> 
+      <div class="content">
+          <h1>Welcome</h1>
+          <h5>Tech stack we used: React Js , Node Js,MySQL</h5>
+          <h5>our team members: Mayur Paliwal, GuruRaj Thakre,Aniket Sonkar, Ranjana Mishra</h5>
+      </div>
+      {/* <div class="side-bar">
+          <img src={menu} class="menu" />
+          <div class="social-links" >
+              <img src={fb}/>
+              <img src={ig}/>
+              <img src={tw}/>
+          </div>
+      </div> */}
+    <div class="bubbles">
+        <img src={bubble}/>
+        <img src={bubble}/>
+        <img src={bubble}/>
+        <img src={bubble}/>
+        <img src={bubble}/>
+        <img src={bubble}/>
+        <img src={bubble}/>
     </div>
+  </div>
   );
 };
 export default Home;
